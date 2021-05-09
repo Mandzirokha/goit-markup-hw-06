@@ -278,8 +278,8 @@ p {
   fill: #000;
 }
 
-.modal-icon-svg:hover,
-.modal-icon-svg:focus {
+.modal-close-btn:hover > .modal-icon-svg,
+.modal-close-btn:focus > .modal-icon-svg {
   fill: var(--accent-cl);
 }
 
