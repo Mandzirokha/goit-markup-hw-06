@@ -278,17 +278,128 @@ p {
   fill: #000;
 }
 
+.modal-icon-svg:hover,
+.modal-icon-svg:focus {
+  fill: var(--accent-cl);
+}
+
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 222px;
+  transform: translate(-50%);
 
   background-color: var(--alt-tittle-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-cl);
+
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.contact-container {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.label-text {
+  display: block;
+  text-align: start;
+  margin-left: 41px;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.contact-form-field {
+  display: block;
+  width: 448px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms var(--timing-function);
+}
+
+.contact-form-icon-svg {
+  position: absolute;
+  left: 52px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms var(--timing-function);
+}
+
+.contact-form-field:focus {
+  border: 1px solid var(--accent-cl);
+}
+
+.contact-form-field:focus + .contact-form-icon-svg {
+  fill: var(--accent-cl);
+}
+
+.contact-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form-message {
+  padding: 12px 16px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-icon-svg {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid #212121;
+  border-radius: 3px;
+}
+
+.checkbox-link {
+  color: var(--accent-cl);
+}
+
+.checkbox-input:checked + .checkbox-icon-svg {
+  background-color: var(--accent-cl);
+  border-color: var(--accent-cl);
+}
+
+.modal-btn {
+  margin-top: 30px;
 }
 
 /* Особенности */
@@ -567,6 +678,40 @@ img {
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background-color: var(--accent-cl);
+}
+
+.subscribing-container {
+  margin-left: 93px;
+}
+
+.email-input {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--alt-tittle-cl);
+  padding-left: 16px;
+
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.email-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-cl);
+}
+
+.send-icon-svg {
+  margin-left: 10px;
+}
+
+.btn-footer {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
 }
 
 /* Portfolio part */
